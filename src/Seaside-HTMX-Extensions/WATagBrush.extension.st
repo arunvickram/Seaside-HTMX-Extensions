@@ -7,3 +7,11 @@ WATagBrush >> hxBoost: shouldBoost [
 
 	self attributeAt: 'hx-boost' put: shouldBoost.
 ]
+
+{ #category : '*Seaside-HTMX-Extensions' }
+WATagBrush >> hxTarget: targetElementId [
+	"Adds an hx-target attribute to an element"
+	"scope: class-variables  &  instance-variables"
+
+	self attributeAt: 'hx-target' put: targetElementId.
+]
